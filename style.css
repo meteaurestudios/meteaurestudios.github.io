@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	color: #fff;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #eee;
+}
+
+p {
+	margin-top: 5%;
+} 
+
+h1 {
+	font-size: 6em;
+}
+
+h2 {
+	margin-top: 6%;
+	font-size: 2em;
+}
+
+li {
+	display: inline-block;
+}
+
+.panel {
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+}
+
+.button {
+	margin-top: 10%;
+	border: 2px solid white;
+	padding: 3%;
+	border-style: line;
+	text-align: center;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #fff;
+}
+
+.button:hover a {
+	color: #000;
+}
+
+#logo {
+	margin-top: 2%;
+	width: 20%;
+}
+
+#left-panel {
+	width: 60%;
+	background-color: black;
+	float: left;
+}
+
+#beta-button {
+	width: 30%;
+	margin-left: 35%;
+}
+
+#right-panel {
+	width: 40%;
+	background-color: #05BAE4;
+}
+
+#polaris-text {
+	margin-left: 20%;
+	width: 60%;
+}
+
+#menu {
+	width: 50%;
+	height: 10%;
+	float: right;
+	text-align: right;
+}
+
+#menu li {
+	color: #fff;
+	margin-top: 10%;
+	margin-right: 20%;
+	font-size: 1.4em;
+}
+
+#screen {
+	width:50%;
+	height: 90%;
+	margin-left: 25%;
+	display:inline-block;
+    vertical-align: middle;
+}

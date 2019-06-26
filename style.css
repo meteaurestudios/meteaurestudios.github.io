@@ -15,10 +15,6 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	color: #eee;
-}
-
 p {
 	margin-top: 5%;
 } 
@@ -102,9 +98,18 @@ li {
 
 #menu li {
 	color: #fff;
-	margin-top: 10%;
+	margin-top: 7%;
 	margin-right: 20%;
-	font-size: 1.4em;
+	font-size: 1.3em;
+	font-weight: 350;
+}
+
+#menu li a:hover {
+	border-bottom: 3px solid;
+}
+
+#polaris-link {
+	border-bottom: 3px solid;
 }
 
 #screen {

@@ -81,7 +81,7 @@ li {
 
 #right-panel {
 	width: 40%;
-	background-color: #05BAE4;
+	background-image: linear-gradient(to bottom , #32ABE1, #56D2E2);
 }
 
 #polaris-text {

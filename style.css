@@ -44,7 +44,7 @@ li {
 	padding: 3%;
 	border-style: line;
 	text-align: center;
-	border-radius: 100px;
+	border-radius: 80px;
 	cursor: pointer;
 }
 
@@ -74,14 +74,25 @@ li {
 	float: left;
 }
 
-#beta-button {
-	width: 30%;
-	margin-left: 35%;
-}
-
 #right-panel {
 	width: 40%;
 	background-image: linear-gradient(to bottom , #32ABE1, #56D2E2);
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  #left-panel, #right-panel {
+    width:100%;
+  }
+
+  #twitter-link {
+  	width: 10%;
+  }
+}
+
+#beta-button {
+	width: 40%;
+	margin-left: 35%;
 }
 
 #polaris-text {
@@ -90,16 +101,19 @@ li {
 }
 
 #menu {
-	width: 50%;
+	width: 30%;
 	height: 10%;
-	float: right;
+	top: 0;
+	right: 0;
+	position: absolute;
 	text-align: right;
 }
 
 #menu li {
 	color: #fff;
-	margin-top: 7%;
+	margin-top: 4%;
 	margin-right: 20%;
+	height: 50%;
 	font-size: 1.3em;
 	font-weight: 350;
 }
@@ -114,7 +128,7 @@ li {
 
 #screen {
 	width:50%;
-	height: 90%;
+	height: 100%;
 	margin-left: 25%;
 	display:inline-block;
     vertical-align: middle;

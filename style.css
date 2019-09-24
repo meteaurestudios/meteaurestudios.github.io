@@ -79,17 +79,6 @@ li {
 	background-image: linear-gradient(to bottom , #32ABE1, #56D2E2);
 }
 
-@media only screen and (max-width:620px) {
-  /* For mobile phones: */
-  #left-panel, #right-panel {
-    width:100%;
-  }
-
-  #twitter-link {
-  	width: 10%;
-  }
-}
-
 #beta-button {
 	width: 40%;
 	margin-left: 35%;
@@ -160,4 +149,22 @@ li {
 
 #about a {
 	border-bottom: 2px solid;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  #left-panel, #right-panel {
+    width:100%;
+  }
+
+  #twitter-link {
+  	width: 10%;
+  }
+
+  #about {
+  	left: 0%;
+  	top: 0%;
+  	width: 100%;
+  	height: 100%;
+  }
 }

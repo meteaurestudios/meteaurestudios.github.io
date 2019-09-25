@@ -151,6 +151,25 @@ li {
 	border-bottom: 2px solid;
 }
 
+#close-pane-cross {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 10px 10px;
+	width: 40px;
+	height: 40px;
+}
+
+#close-pane-cross svg path {
+	fill: #fff;
+}
+
+#close-pane-cross svg  {
+	display: inline-block;
+	height: 100%;
+    width: 100%;
+}
+
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
   #left-panel, #right-panel {

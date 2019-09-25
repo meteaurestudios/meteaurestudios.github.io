@@ -90,11 +90,11 @@ li {
 }
 
 #menu {
-	width: 30%;
+	width: 25%;
 	height: 10%;
 	top: 0;
 	right: 0;
-	position: absolute;
+	position: fixed;
 	text-align: right;
 }
 
@@ -124,7 +124,7 @@ li {
 }
 
 #about_pane {
-	//display: none;
+	display: none;
 	background-color: #000000cc;
 	position: fixed;
 	z-index: 1;

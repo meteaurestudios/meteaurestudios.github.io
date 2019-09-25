@@ -125,7 +125,7 @@ li {
 
 #about_pane {
 	//display: none;
-	background-color: #000000aa;
+	background-color: #000000cc;
 	position: fixed;
 	z-index: 1;
   	left: 0;
@@ -135,12 +135,12 @@ li {
 }
 
 #about {
-	border-radius:  20px;
-	background-color: #222;
+	border-radius: 15px;
+	background-color: #19191b;
 	position: relative;
-	left: 25%;
+	left: 28%;
   	top: 25%;
-  	width: 50%;
+  	width: 44%;
   	height: 50%;
   	padding: 10px 50px;
   	box-sizing: border-box;

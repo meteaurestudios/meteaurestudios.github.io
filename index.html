@@ -61,6 +61,7 @@
 					<input type='submit' value='SUBMIT' class='button' id='submit'/>
 				</p>
 			</form>
+			<div id="email-error">The email address you provided above is not a valid gmail address</div>
 			<div class="close-cross close-icon" onclick="closeJoinBetaPane()"></div>
 		</div>
 	</div>
@@ -85,10 +86,17 @@
 			var x = document.getElementById("joinbeta_pane");
 			x.style.display = "none";
 		}
-		
+
 		function validateEmail() {
 			var email = document.getElementById("email").value;
-			return /^\S+@gmail\.com$/.test(email);
+			var valid = /^\S+@gmail\.com$/.test(email);
+
+			if(!valid) {
+				var x = document.getElementById("email-error");
+				x.style.display = "block";
+			}
+
+			return valid;
 		}
 
 	</script>

@@ -170,6 +170,13 @@ li {
 	background: #aaa;
 }
 
+#email-error {
+	display: none;
+	margin-top: 20px;
+	color: #ff7777;
+	font-size: 0.9em
+}
+
 #email {
 	display: block;
 	margin-top: 10px;

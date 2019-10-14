@@ -174,7 +174,7 @@ li {
 	display: none;
 	margin-top: 20px;
 	color: #ff7777;
-	font-size: 0.9em
+	font-size: 0.9em;
 }
 
 #email {
@@ -182,7 +182,7 @@ li {
 	margin-top: 10px;
 	margin-bottom: 20px;
 	border-radius: 5px;
-	padding: 7px 10px 10px 12px;
+	padding: 7px 20px 10px 30px;
 }
 
 #submit {

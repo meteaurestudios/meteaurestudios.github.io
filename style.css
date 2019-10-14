@@ -150,8 +150,8 @@ li {
 }
 
 .close-icon {
-	mask-image: url(img/close.svg);
-	-webkit-mask-image: url(img/close.svg);
+	mask-image: url(img/cross.svg);
+	-webkit-mask-image: url(img/cross.svg);
 }
 
 .close-cross {

@@ -54,11 +54,11 @@
 	<div id="joinbeta_pane" class="popup_pane">
 		<div id="joinbeta" class="popup">
 			<h2>Join Alpha Program</h2>
-			<form action="https://getsimpleform.com/messages?form_api_token=3d721dde5110f9fb0f0853039bc30aac" method="post">
+			<form action="https://getsimpleform.com/messages?form_api_token=3d721dde5110f9fb0f0853039bc30aac" method="post" onsubmit="if (validateEmail()){this.submit();} else {return false;}">
 				<p>
 					<label for="email">Please provide below the gmail address associated to your android device(s):</label>
 					<input type="email" name="email" id="email" rules="required" placeholder="john.doe@gmail.com"/>
-					<input type='submit' value='SUBMIT' class='button' id='submit' onclick="closeJoinBetaPane()"/>
+					<input type='submit' value='SUBMIT' class='button' id='submit'/>
 				</p>
 			</form>
 			<div class="close-cross close-icon" onclick="closeJoinBetaPane()"></div>
@@ -85,6 +85,12 @@
 			var x = document.getElementById("joinbeta_pane");
 			x.style.display = "none";
 		}
+		
+		function validateEmail() {
+			var email = document.getElementById("email").value;
+			return /^\S+@gmail\.com$/.test(email);
+		}
+
 	</script>
 
 </body>

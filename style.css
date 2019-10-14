@@ -122,7 +122,7 @@ li {
     vertical-align: middle;
 }
 
-#about_pane {
+.popup_pane {
 	display: none;
 	background-color: #000000cc;
 	position: fixed;
@@ -133,7 +133,7 @@ li {
   	height: 100%;
 }
 
-#about {
+.popup {
 	border-radius: 15px;
 	background-color: #19191b;
 	position: relative;
@@ -148,6 +148,16 @@ li {
 
 #about a {
 	border-bottom: 2px solid;
+}
+
+.close-pane-cross {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 15px 15px;
+	width: 40px;
+	height: 40px;
+	background-color: red;
 }
 
 #close-pane-cross {
@@ -169,6 +179,29 @@ li {
     width: 100%;
 }
 
+#email {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	padding: 7px 10px 10px 12px;
+}
+
+#submit {
+	width: 30%;
+	color: #fff;
+	text-decoration: none;
+	background-color: #19191b;
+	padding: 10px 10px 10px 12px;
+
+	border: 2px solid white;
+	/*padding: 3%;*/
+	border-style: line;
+	text-align: center;
+	border-radius: 80px;
+	cursor: pointer;
+}
+
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
   #left-panel, #right-panel {
@@ -184,7 +217,7 @@ li {
   	width: 10%;
   }
 
-  #about {
+  #about, #joinbeta {
   	left: 0%;
   	top: 0%;
   	width: 100%;

@@ -38,12 +38,13 @@ li {
 }
 
 .button {
-	margin-top: 10%;
 	border: 2px solid white;
 	padding: 3%;
 	text-align: center;
 	border-radius: 80px;
 	cursor: pointer;
+	color: #fefefe;
+	background-color: rgba(0,0,0,0);
 }
 
 .button:hover {
@@ -75,6 +76,7 @@ li {
 }
 
 #beta-button {
+	margin-top: 10%;
 	width: 40%;
 	margin-left: 30%;
 }
@@ -114,13 +116,13 @@ li {
 	width:50%;
 	height: 100%;
 	margin-left: 25%;
-	display:inline-block;
+	display: inline-block;
 	vertical-align: middle;
 }
 
 .popup_pane {
 	display: none;
-	background-color: #000000cc;
+	background-color: rgba(0,0,0,0.8);
 	position: fixed;
 	z-index: 1;
 	left: 0;
@@ -131,13 +133,14 @@ li {
 
 .popup {
 	border-radius: 15px;
-	background-color: #19191b;
+	background-color: #29292b;
 	position: relative;
 	left: 28%;
-	top: 25%;
+	top: 15%;
 	width: 44%;
-	height: 50%;
+	height: auto;
 	padding: 10px 50px;
+	padding-bottom: 40px;
 	box-sizing: border-box;
 	box-shadow: 0px -1px 20px 5px rgba(0,0,0,0.8);
 }
@@ -177,17 +180,8 @@ li {
 
 #submit {
 	width: 30%;
-	color: #fff;
-	text-decoration: none;
-	background-color: #19191b;
+	
 	padding: 10px 10px 10px 12px;
-
-	border: 2px solid white;
-	/*padding: 3%;*/
-	border-style: line;
-	text-align: center;
-	border-radius: 80px;
-	cursor: pointer;
 }
 
 @media only screen and (max-width:620px) {

@@ -53,10 +53,12 @@
 
 	<div id="joinbeta_pane" class="popup_pane">
 		<div id="joinbeta" class="popup">
-			<h2>Join Alpha Program</h2>
+			<h2>Join alpha program</h2>
 			<form action="https://getsimpleform.com/messages?form_api_token=3d721dde5110f9fb0f0853039bc30aac" method="post" onsubmit="if (validateEmail()){this.submit();} else {return false;}">
 				<p>
-					<label for="email">Please provide below the gmail address associated to your android device(s):</label>
+					<label for="email">Enter below the gmail address associated to your android device(s):</label>
+					<br/>
+					<img src="img/android.png" id="android-logo"/>
 					<input type="email" name="email" id="email" rules="required" placeholder="john.doe@gmail.com"/>
 					<input type='submit' value='SUBMIT' class='button' id='submit'/>
 				</p>

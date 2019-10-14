@@ -178,16 +178,27 @@ li {
 }
 
 #email {
-	display: block;
-	margin-top: 10px;
+	margin-top: 15px;
 	margin-bottom: 20px;
-	border-radius: 5px;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 10px;
 	padding: 7px 20px 10px 30px;
+	border: 2px solid white;
+}
+
+#android-logo {
+	margin-top: 21px;
+	display: inline-block;
+	height: 24;
+	background-color: rgba(0,0,0,0);
+	vertical-align: top;
+	margin-right: 8px;
 }
 
 #submit {
+	display: block;
 	width: 30%;
-	
 	padding: 10px 10px 10px 12px;
 }
 

@@ -41,7 +41,6 @@ li {
 	margin-top: 10%;
 	border: 2px solid white;
 	padding: 3%;
-	border-style: line;
 	text-align: center;
 	border-radius: 80px;
 	cursor: pointer;
@@ -49,22 +48,19 @@ li {
 
 .button:hover {
 	background-color: #fff;
-}
-
-.button:hover a {
 	color: #000;
 }
 
 #logo {
 	margin-top: 2%;
-	width: 20%;
+	width: 18%;
 }
 
 #twitter-link  {
 	width: 3%;
 	margin-left: 2%;
 	position: absolute;
-    bottom: 3%;
+	bottom: 3%;
 }
 
 #left-panel {
@@ -119,7 +115,7 @@ li {
 	height: 100%;
 	margin-left: 25%;
 	display:inline-block;
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 .popup_pane {
@@ -127,10 +123,10 @@ li {
 	background-color: #000000cc;
 	position: fixed;
 	z-index: 1;
-  	left: 0;
-  	top: 0;
-  	width: 100%;
-  	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .popup {
@@ -138,45 +134,37 @@ li {
 	background-color: #19191b;
 	position: relative;
 	left: 28%;
-  	top: 25%;
-  	width: 44%;
-  	height: 50%;
-  	padding: 10px 50px;
-  	box-sizing: border-box;
-  	box-shadow: 0px -1px 20px 5px rgba(0,0,0,0.8);
+	top: 25%;
+	width: 44%;
+	height: 50%;
+	padding: 10px 50px;
+	box-sizing: border-box;
+	box-shadow: 0px -1px 20px 5px rgba(0,0,0,0.8);
 }
 
 #about a {
 	border-bottom: 2px solid;
 }
 
-.close-pane-cross {
+.close-icon {
+	mask-image: url(img/close.svg);
+	-webkit-mask-image: url(img/close.svg);
+}
+
+.close-cross {
 	position: absolute;
 	top: 0;
 	right: 0;
 	margin: 15px 15px;
 	width: 40px;
 	height: 40px;
-	background-color: red;
+	background: #fff;
+	mask-size: cover;
 }
 
-#close-pane-cross {
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 15px 15px;
-	width: 40px;
-	height: 40px;
-}
-
-#close-pane-cross svg path {
-	fill: #fff;
-}
-
-#close-pane-cross svg  {
-	display: inline-block;
-	height: 100%;
-    width: 100%;
+.close-cross:hover,
+.close-cross:focus {
+	background: #aaa;
 }
 
 #email {
@@ -203,24 +191,24 @@ li {
 }
 
 @media only screen and (max-width:620px) {
-  /* For mobile phones: */
-  #left-panel, #right-panel {
-    width:100%;
-  }
+	/* For mobile phones: */
+	#left-panel, #right-panel {
+		width:100%;
+	}
 
-  #polaris-text {
-  	margin-left: 10%;
-  	width: 80%;
-  }
+	#polaris-text {
+		margin-left: 10%;
+		width: 80%;
+	}
 
-  #twitter-link {
-  	width: 10%;
-  }
+	#twitter-link {
+		width: 10%;
+	}
 
-  #about, #joinbeta {
-  	left: 0%;
-  	top: 0%;
-  	width: 100%;
-  	height: 100%;
-  }
+	#about, #joinbeta {
+		left: 0%;
+		top: 0%;
+		width: 100%;
+		height: 100%;
+	}
 }

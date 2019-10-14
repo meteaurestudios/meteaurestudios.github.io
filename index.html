@@ -18,7 +18,7 @@
 			<h2>Pattern creation station</h2>
 			<p>Create loop based patterns with Polaris using its 6 tracks sequencer. Modulate key parameters per step to generate complex and rich beats from a very simple interface. Select between the 3 instrument types to generate complex bass lines, harsh noise or use the factory included samples at your disposal.</p>
 
-			<div class='button' id='beta-button' onclick="openJoinBetaPane()"><a href='#'>JOIN ALPHA</a></div>
+			<div class='button' id='beta-button' onclick="openJoinBetaPane()">JOIN ALPHA</div>
 		</div>
 
 		<a id='twitter-link' href ="https://twitter.com/meteaurestudios"><img  src='img/twitter.svg'/></a>
@@ -37,7 +37,7 @@
 		</ul>
 	</div>
 
-	<div id="about_pane" class="popup_pane" onclick="closeAboutPane()">
+	<div id="about_pane" class="popup_pane">
 		<div id="about" class="popup">
 			<h2>About Us</h2>
 
@@ -47,54 +47,45 @@
 			
 			<p>To stay up-to-date with our latest news please subscribe to our <a href="https://twitter.com/meteaurestudios">twitter</a>.</p>
 
-			<div id="close-pane-cross" />
-			<svg viewBox="0 0 52 52">
-				<path d="M26,0C11.664,0,0,11.663,0,26s11.664,26,26,26s26-11.663,26-26S40.336,0,26,0z M26,50C12.767,50,2,39.233,2,26
-				S12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z"/>
-				<path d="M35.707,16.293c-0.391-0.391-1.023-0.391-1.414,0L26,24.586l-8.293-8.293c-0.391-0.391-1.023-0.391-1.414,0
-				s-0.391,1.023,0,1.414L24.586,26l-8.293,8.293c-0.391,0.391-0.391,1.023,0,1.414C16.488,35.902,16.744,36,17,36
-				s0.512-0.098,0.707-0.293L26,27.414l8.293,8.293C34.488,35.902,34.744,36,35,36s0.512-0.098,0.707-0.293
-				c0.391-0.391,0.391-1.023,0-1.414L27.414,26l8.293-8.293C36.098,17.316,36.098,16.684,35.707,16.293z"/>
-			</svg>
+			<div class="close-cross close-icon" onclick="closeAboutPane()"></div>
 		</div>
 	</div>
-</div>
 
-<div id="joinbeta_pane" class="popup_pane">
-	<div id="joinbeta" class="popup">
-		<h2>Join Alpha Program</h2>
-		<form action="https://getsimpleform.com/messages?form_api_token=3d721dde5110f9fb0f0853039bc30aac" method="post">
-			<p>
-				<label for="email">Please provide below the gmail address associated to your android device(s):</label>
-				<input type="email" name="email" id="email" rules="required" placeholder="john.doe@gmail.com"/>
-				<input type='submit' value='Submit' id='submit' onclick="closeJoinBetaPane()"/>
-			</p>
-		</form>
-		<div class="close-pane-cross" onclick="closeJoinBetaPane()"/>
+	<div id="joinbeta_pane" class="popup_pane">
+		<div id="joinbeta" class="popup">
+			<h2>Join Alpha Program</h2>
+			<form action="https://getsimpleform.com/messages?form_api_token=3d721dde5110f9fb0f0853039bc30aac" method="post">
+				<p>
+					<label for="email">Please provide below the gmail address associated to your android device(s):</label>
+					<input type="email" name="email" id="email" rules="required" placeholder="john.doe@gmail.com"/>
+					<input type='submit' value='Submit' id='submit' onclick="closeJoinBetaPane()"/>
+				</p>
+			</form>
+			<div class="close-cross close-icon" onclick="closeJoinBetaPane()"></div>
+		</div>
 	</div>
-</div>
 
-<script>
-	function openAboutPane() {
-		var x = document.getElementById("about_pane");
-		x.style.display = "block";
-	}
+	<script>
+		function openAboutPane() {
+			var x = document.getElementById("about_pane");
+			x.style.display = "block";
+		}
 
-	function closeAboutPane() {
-		var x = document.getElementById("about_pane");
-		x.style.display = "none";
-	}
+		function closeAboutPane() {
+			var x = document.getElementById("about_pane");
+			x.style.display = "none";
+		}
 
-	function openJoinBetaPane() {
-		var x = document.getElementById("joinbeta_pane");
-		x.style.display = "block";
-	}
+		function openJoinBetaPane() {
+			var x = document.getElementById("joinbeta_pane");
+			x.style.display = "block";
+		}
 
-	function closeJoinBetaPane() {
-		var x = document.getElementById("joinbeta_pane");
-		x.style.display = "none";
-	}
-</script>
+		function closeJoinBetaPane() {
+			var x = document.getElementById("joinbeta_pane");
+			x.style.display = "none";
+		}
+	</script>
 
 </body>
 

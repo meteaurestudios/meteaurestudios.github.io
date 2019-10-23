@@ -29,6 +29,7 @@
 			<p>Create loop based patterns with Polaris using its 6 tracks sequencer. Modulate key parameters per step to generate complex and rich beats from a very simple interface. Select between the 3 instrument types to generate complex bass lines, harsh noise or use the factory included samples at your disposal.</p>
 
 			<div class='button' id='beta-button' onclick="openJoinBetaPane()">JOIN ALPHA</div>
+			<div id="email-registered">Thank you, we'll get back to you shortly.</div>
 		</div>
 
 		<a id='twitter-link' href ="https://twitter.com/meteaurestudios"><img  src='img/twitter.svg'/></a>
@@ -64,7 +65,11 @@
 	<div id="joinbeta_pane" class="popup_pane">
 		<div id="joinbeta" class="popup">
 			<h2>Join alpha program</h2>
-			<form action="https://getsimpleform.com/messages?form_api_token=3d721dde5110f9fb0f0853039bc30aac" method="post" onsubmit="if (validateEmail()){this.submit();} else {return false;}">
+
+			<form action="https://getsimpleform.com/messages?form_api_token=3d721dde5110f9fb0f0853039bc30aac" method="post"
+				  onsubmit="if (validateEmail()){this.submit();} else {return false;}">
+				  <input id="redirect_form" type='hidden' name='redirect_to' value='' />
+
 				<p>
 					<label for="email">Enter below the gmail address associated to your android device(s):</label>
 					<br/>
@@ -72,46 +77,15 @@
 					<input type="email" name="email" id="email" rules="required" placeholder="john.doe@gmail.com"/>
 					<input type='submit' value='SUBMIT' class='button' id='submit'/>
 				</p>
+
 			</form>
+
 			<div id="email-error">The email address you provided above is not a valid gmail address</div>
 			<div class="close-cross close-icon" onclick="closeJoinBetaPane()"></div>
 		</div>
 	</div>
 
-	<script>
-		function openAboutPane() {
-			var x = document.getElementById("about_pane");
-			x.style.display = "block";
-		}
-
-		function closeAboutPane() {
-			var x = document.getElementById("about_pane");
-			x.style.display = "none";
-		}
-
-		function openJoinBetaPane() {
-			var x = document.getElementById("joinbeta_pane");
-			x.style.display = "block";
-		}
-
-		function closeJoinBetaPane() {
-			var x = document.getElementById("joinbeta_pane");
-			x.style.display = "none";
-		}
-
-		function validateEmail() {
-			var email = document.getElementById("email").value;
-			var valid = /^\S+@gmail\.com$/.test(email);
-
-			if(!valid) {
-				var x = document.getElementById("email-error");
-				x.style.display = "block";
-			}
-
-			return valid;
-		}
-
-	</script>
+	<script type="text/javascript" src="script.js"></script>
 
 </body>
 

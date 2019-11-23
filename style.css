@@ -236,8 +236,12 @@ li {
 		width: 80%;
 	}
 
-	#twitter-link {
+	.social-icon {
 		width: 10%;
+	}
+
+	#instagram-link {
+		margin-left: 15%;
 	}
 
 	#about, #joinbeta {

@@ -65,11 +65,18 @@ li {
 	width: 18%;
 }
 
-#twitter-link  {
+.social-icon {
 	width: 3%;
-	margin-left: 2%;
 	position: absolute;
 	bottom: 3%;
+}
+
+#twitter-link  {
+	margin-left: 2%;
+}
+
+#instagram-link {
+	margin-left: 6%;
 }
 
 #left-panel {

@@ -203,18 +203,21 @@ li {
 
 #email {
 	margin-top: 25px;
+	margin-left: 10px; 
 	margin-bottom: 25px;
 	display: inline-block;
 	vertical-align: top;
 	border-radius: 10px;
+	height: 42px;
+	width: 60%;
 	padding: 10px 20px 10px 30px;
 	border: 2px solid white;
 }
 
 #android-logo {
-	margin-top: 21px;
+	margin-top: 37px;
 	display: inline-block;
-	height: 24;
+	height: 24px;
 	background-color: rgba(0,0,0,0);
 	vertical-align: top;
 	margin-right: 8px;

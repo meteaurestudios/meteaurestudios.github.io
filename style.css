@@ -51,8 +51,8 @@ li {
 }
 
 .green_button {
-	border-color: #2bf08a;
-	color: #2bf08a;
+	border-color: #3ddc84;
+	color: #3ddc84;
 }
 
 .button:hover {
@@ -106,7 +106,7 @@ li {
 	margin-top: 2%;
 	width: 100%;
 	text-align: center;
-	color: #2bf08a;
+	color: #3ddc84;
 }
 
 #polaris-text {

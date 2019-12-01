@@ -90,8 +90,13 @@ li {
 	background-image: linear-gradient(to bottom , #32ABE1, #56D2E2);
 }
 
-#beta-button {
+#android-logo-over-beta {
 	margin-top: 10%;
+	margin-left: 45%;
+	width: 10%;
+}
+
+#beta-button {
 	width: 40%;
 	margin-left: 30%;
 }
@@ -207,7 +212,7 @@ li {
 	margin-bottom: 25px;
 	display: inline-block;
 	vertical-align: top;
-	border-radius: 10px;
+	border-radius: 8px;
 	height: 42px;
 	width: 60%;
 	padding: 10px 20px 10px 30px;

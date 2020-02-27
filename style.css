@@ -79,6 +79,10 @@ li {
 	margin-left: 6%;
 }
 
+#facebook-link {
+	margin-left: 10%;
+}
+
 #left-panel {
 	width: 60%;
 	background-color: black;
@@ -251,6 +255,10 @@ li {
 
 	#instagram-link {
 		margin-left: 15%;
+	}
+
+	#facebook-link {
+		margin-left: 28%;
 	}
 
 	#about, #joinbeta {

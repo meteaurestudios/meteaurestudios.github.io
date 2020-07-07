@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>  
+	<script type="text/javascript">
+		function sendEmail() {
+			Email.send({
+				SecureToken : "5224c026-22bf-4c53-9c52-dc18c5f96a15",
+				To : 'meteaure.studios@gmail.com',
+				From : "greenlatency@gmail.com",
+				Subject : "New form entry",
+				Body : "coucou my friend",
+			})
+			.then(function(message){
+				alert("mail sent successfully")
+			});
+		}
+	</script>
+</head>
+<body>  
+	<form method="post">
+		<input type="button" value="Send Email" onclick="sendEmail()"/>
+	</form>  
+</body>
+</html>

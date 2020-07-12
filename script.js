@@ -30,9 +30,9 @@ function validateEmail() {
 		x.style.display = "block";
 	}
 	else {
-		var redirect = document.getElementById("redirect_form");
-		var url = window.location.href.split("#")[0];
-		redirect.value = url + "#registered"
+		closeJoinBetaPane();
+		displayRegistered();
+		window.location.hash = '#registered';
 	}
 
 	return valid;
@@ -63,12 +63,20 @@ window.onload = function() {
 
     // EmailJs callback
     document.getElementById('registration-form').addEventListener('submit', function(event) {
+
     	event.preventDefault();
-    	emailjs.sendForm('gmail', 'template_xG7jDpfU', this)
-    	.then(function(response) {
-    		console.log('SUCCESS!', response.status, response.text);
-    	}, function(error) {
-    		console.log('FAILED...', error);
-    	});
+
+    	var valid = validateEmail();
+    	console.log(valid ? 'valid email entered' : 'invalid email format');
+    	
+    	if(valid) {
+    		emailjs.sendForm('gmail', 'template_xG7jDpfU', this)
+    		.then(function(response) {
+    			console.log('Email sent', response.status, response.text);
+    		}, function(error) {
+    			console.log('Error, email not sent', error);
+    		});
+    	}
+
     });
 }

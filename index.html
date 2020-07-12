@@ -10,6 +10,13 @@
 	  gtag('config', 'UA-150383650-1');
 	</script>
 
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init('user_o4zWMrtRzYBil8xRKR7gE');
+        })();
+    </script>
+
 	<title>Meteaure Studios</title>
 	<link rel="stylesheet" href="style.css" />
 	
@@ -28,8 +35,7 @@
 			<p>Create loop based patterns with Polaris using its 6 tracks sequencer. Modulate key parameters per step to generate complex and rich beats from a very simple interface. Take advantage of the 2 instrument types to generate complex bass lines, harsh noise or use the factory included samples at your disposal.</p>
 			
 			<img src="img/android.svg" id="android-logo-over-beta"/>
-			<!-- <div class='button' id='beta-button' onclick="openJoinBetaPane()">GET ALPHA VERSION</div> -->
-			<a href="mailto:meteaure.studios@gmail.com"><div class='button' id='beta-button' onclick="mailto:meteaure.studios@gmail.com">GET ALPHA VERSION</div></a>
+			<div class='button' id='beta-button' onclick="openJoinBetaPane()">GET ALPHA VERSION</div>
 			<div id="email-registered">Thank you, we'll get back to you shortly.</div>
 		</div>
 
@@ -69,16 +75,13 @@
 		<div id="joinbeta" class="popup">
 			<h2>Join alpha program</h2>
 
-			<form action="https://getsimpleform.com/messages?form_api_token=3d721dde5110f9fb0f0853039bc30aac" method="post"
-				  onsubmit="if (validateEmail()){this.submit();} else {return false;}">
-				  <input id="redirect_form" type='hidden' name='redirect_to' value='' />
-
+			<form id="registration-form">
 				<p>
 					<label for="email">Enter below the gmail address associated to your android device(s):</label>
 					<br/>
 					<img src="img/android.svg" id="android-logo"/>
-					<input type="email" name="email" id="email" rules="required" placeholder="john.doe@gmail.com"/>
-					<input type='submit' value='SUBMIT' class='button' id='submit_button'/>
+					<input type="email" name="user_email" id="email" rules="required" placeholder="john.doe@gmail.com"/>
+					<input type='submit' value='Register' class='button' id='submit_button'/>
 				</p>
 
 			</form>

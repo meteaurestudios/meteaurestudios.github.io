@@ -33,7 +33,6 @@ function validateEmail() {
 		var redirect = document.getElementById("redirect_form");
 		var url = window.location.href.split("#")[0];
 		redirect.value = url + "#registered"
-		
 	}
 
 	return valid;
@@ -50,15 +49,26 @@ function displayRegistered() {
 
 window.onload = function() {
 
-    var element = window.location.hash;
+	var element = window.location.hash;
 
-    if(element == "#registered") {
-    	displayRegistered();
-    }
-    else if(element == "#join") {
-    	openJoinBetaPane();
-    }
-    else if(element == "#about") {
-    	openAboutPane();
-    }
+	if(element == "#registered") {
+		displayRegistered();
+	}
+	else if(element == "#join") {
+		openJoinBetaPane();
+	}
+	else if(element == "#about") {
+		openAboutPane();
+	}
+
+    // EmailJs callback
+    document.getElementById('registration-form').addEventListener('submit', function(event) {
+    	event.preventDefault();
+    	emailjs.sendForm('gmail', 'template_xG7jDpfU', this)
+    	.then(function(response) {
+    		console.log('SUCCESS!', response.status, response.text);
+    	}, function(error) {
+    		console.log('FAILED...', error);
+    	});
+    });
 }

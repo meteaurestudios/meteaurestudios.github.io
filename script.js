@@ -48,6 +48,19 @@ function displayRegistered() {
 	joined_text.style.display = "block";
 }
 
+// Display menu items in black/white depending on scroll position
+window.addEventListener('scroll', function(e) {
+
+	var header = document.getElementsByTagName("header").item(0);
+	var menu_items = document.getElementsByClassName("menu-item");
+	var color = window.scrollY > header.offsetHeight - menu_items.item(0).offsetHeight ? "#333" : "#fff"
+
+	for (var i = 0; i < menu_items.length; i++) {
+		menu_items[i].style.color = color;
+	}
+
+});
+
 window.onload = function() {
 
 	var element = window.location.hash;

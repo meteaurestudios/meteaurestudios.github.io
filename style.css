@@ -146,14 +146,15 @@ header {
 }
 
 footer {
-	font-size: 1.5em;
-	margin-top: 4em;
+	font-size: 1.1em;
+	margin-top: 3em;
 	margin-bottom: 1em;
 	color: #333;
 	text-align: center;
 }
 
 .social-icon img {
+	font-size: 1.4em;
 	height: 2.4em;
 	color: #333;
 	margin: 0 0.2em;

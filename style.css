@@ -118,7 +118,6 @@ header {
 	
 .img-right img, .img-left .feature-text {
 	order: 1; /* display on the right */
-	
 }
 
 .img-left img {
@@ -298,6 +297,8 @@ footer {
 	.feature {
 		height: auto;
 		display: block;
+		width: 84%;
+		margin-left: 8%;
 	}
 
 	.feature-text{
@@ -308,8 +309,10 @@ footer {
 		margin-left: 0%;
 	}
 
-	.feature img {
-		width: 80%;
+	.feature-img {
+		height: unset;
+		width: 90%;
+		margin-left: 5%;
 	}
 
 	#about, #joinbeta {

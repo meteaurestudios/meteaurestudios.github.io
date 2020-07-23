@@ -63,7 +63,7 @@ header {
 	height: 8em;
 }
 
-.alpha-button img {
+#alpha-button img {
 	margin-top: 13%;
 	width: 50%;
 }
@@ -126,6 +126,39 @@ header {
 	margin-left: 15%;
 }
 
+#try-it {
+	margin-top: 5em;
+}
+
+#try-it h2 {
+	font-size: 2.4em;
+	font-weight: 600;
+	color: #333;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 0.8em;
+}
+
+#alpha-button-bottom img {
+	width: 20%;
+	margin-left: 40%;
+}
+
+footer {
+	font-size: 1.5em;
+	margin-top: 4em;
+	margin-bottom: 1em;
+	color: #333;
+	text-align: center;
+}
+
+.social-icon img {
+	height: 2.5em;
+	color: #333;
+	margin: 0 0.3em;
+	margin-bottom: 1em;
+}
+
 /* ###########################*/
 
 
@@ -145,38 +178,10 @@ header {
 }
 
 .button:hover {
-	background-color: #fff;
+	background-color: #333;
 	color: #000;
 }
 
-.social-icon {
-	width: 3%;
-	position: absolute;
-	bottom: 3%;
-}
-
-#twitter-link  {
-	margin-left: 2%;
-}
-
-#instagram-link {
-	margin-left: 6%;
-}
-
-#facebook-link {
-	margin-left: 10%;
-}
-
-/*#left-panel {
-	width: 60%;
-	background-color: black;
-	float: left;
-}
-
-#right-panel {
-	width: 40%;
-	background-image: linear-gradient(to bottom , #32ABE1, #56D2E2);
-}*/
 
 #android-logo-over-beta {
 	margin-top: 10%;

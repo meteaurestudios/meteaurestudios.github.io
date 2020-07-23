@@ -17,11 +17,6 @@ a {
 	text-decoration: none;
 }
 
-p {
-	margin-top: 5%;
-	font-weight: normal;
-} 
-
 h1 {
 	font-size: 5em;
 }
@@ -73,7 +68,61 @@ header {
 	width: 50%;
 }
 
+#menu {
+	width: 25%;
+	height: 10%;
+	top: 0;
+	right: 0;
+	position: fixed;
+	text-align: right;
+}
 
+#menu li {
+	color: #fff;
+	margin-top: 4%;
+	margin-right: 10%;
+	height: 50%;
+	font-size: 1.3em;
+}
+
+#menu li a:hover {
+	border-bottom: 2px solid;
+}
+
+.feature {
+	height: 50%;
+	margin-top: 5em;
+	margin-left: 10%;
+	width: 80%;
+	color: #333;
+}
+
+.feature-text {
+	width: 50%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.feature-text h3 {
+	font-size: 2.8em;
+	margin-bottom: 0.8em;
+	font-weight: 400;
+}
+
+.feature-text p {
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.feature-img {
+	margin-left: 15%;
+	height: 150%;
+	display: inline-block;	
+	vertical-align: middle;
+}
+	
+
+/* ###########################*/
 
 
 .button, .green_button {
@@ -114,7 +163,7 @@ header {
 	margin-left: 10%;
 }
 
-#left-panel {
+/*#left-panel {
 	width: 60%;
 	background-color: black;
 	float: left;
@@ -123,7 +172,7 @@ header {
 #right-panel {
 	width: 40%;
 	background-image: linear-gradient(to bottom , #32ABE1, #56D2E2);
-}
+}*/
 
 #android-logo-over-beta {
 	margin-top: 10%;
@@ -149,27 +198,7 @@ header {
 	width: 60%;
 }
 
-#menu {
-	width: 25%;
-	height: 10%;
-	top: 0;
-	right: 0;
-	position: fixed;
-	text-align: right;
-}
 
-#menu li {
-	color: #fff;
-	margin-top: 4%;
-	margin-right: 10%;
-	height: 50%;
-	font-size: 1.3em;
-	font-weight: 350;
-}
-
-#menu li a:hover {
-	border-bottom: 2px solid;
-}
 
 #polaris-link {
 	border-bottom: 2px solid;

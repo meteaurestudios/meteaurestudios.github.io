@@ -35,7 +35,7 @@
 			<img id="polaris-title" src='img/polaris-title.svg'/>
 			<h2>Pattern creation station</h2>
 			<p>Inspired from modern drum machines and grooveboxes, Polaris is an Android app allowing you to quickly create patterns anywhere, anytime.</p>
-			<a id="alpha-button" href ="https://twitter.com/meteaurestudios"><img src='img/alpha-button.svg'/></a>
+			<a id="alpha-button" href ="#join" onclick="openJoinBetaPane()"><img src='img/alpha-button.svg'/></a>
 		</div>
 	</header>
 
@@ -81,7 +81,7 @@
 
 	<div id="try-it">
 		<h2>Why don&#39;t you try it yourself ?</h2>
-		<a id="alpha-button-bottom" href ="https://twitter.com/meteaurestudios"><img src='img/alpha-button.svg'/></a>
+		<a id="alpha-button-bottom" href ="#join" onclick="openJoinBetaPane()"><img src='img/alpha-button.svg'/></a>
 	</div>
 
 	<div id="menu">
@@ -123,14 +123,12 @@
 			<h2>Join alpha program</h2>
 
 			<form id="registration-form">
-				<p>
-					<label for="email">Enter below the gmail address associated to your android device(s):</label>
-					<br/>
+				<label for="email">Enter below the gmail address associated to your android device(s):</label>
+				<div>
 					<img src="img/android.svg" id="android-logo"/>
 					<input type="email" name="user_email" id="email" rules="required" placeholder="john.doe@gmail.com"/>
-					<input type='submit' value='Register' class='button' id='submit_button'/>
-				</p>
-
+				</div>
+				<input type='submit' value='Register' class='button' id='submit_button'/>
 			</form>
 
 			<div id="email-error">The email address you provided above is not a valid gmail address</div>

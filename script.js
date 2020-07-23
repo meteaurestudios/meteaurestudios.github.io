@@ -12,7 +12,6 @@ function closeAboutPane() {
 function openJoinBetaPane() {
 	var x = document.getElementById("joinbeta_pane");
 	x.style.display = "block";
-	window.location.hash = "join";
 }
 
 function closeJoinBetaPane() {

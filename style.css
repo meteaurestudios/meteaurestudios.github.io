@@ -33,7 +33,7 @@ header {
 	position: absolute;
 	top: 2%;
 	left: 0;
-	height: 18%;
+	height: 20%;
 }
 
 #header-text {
@@ -56,7 +56,7 @@ header {
 }
 
 #polaris-title {
-	width: 80%;
+	width: 75%;
 }
 
 #alpha-button img {
@@ -67,7 +67,7 @@ header {
 #menu {
 	width: 25%;
 	height: 10%;
-	top: 0;
+	top: 1%;
 	right: 0;
 	position: fixed;
 	text-align: right;
@@ -180,12 +180,12 @@ footer {
 	box-shadow: 0px -1px 20px 5px rgba(0,0,0,0.8);
 }
 
-#about h2 {
+#about h2, #joinbeta h2 {
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
-#about p {
+#about p, #joinbeta p {
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
@@ -193,10 +193,6 @@ footer {
 #about a {
 	border-bottom: 2px solid;
 }
-
-
-/* ###########################*/
-
 
 .button {
 	border: 2px solid white;
@@ -206,11 +202,18 @@ footer {
 	cursor: pointer;
 	color: #fefefe;
 	background-color: rgba(0,0,0,0);
+	font-size: 100%;
+	padding: 10px 30px 10px 30px;
+	display: inline-block;
 }
 
 .button:hover {
-	background-color: #333;
-	color: #000;
+	background-color: #fff;
+	color: #333;
+}
+
+#registration-form {
+	text-align: center;
 }
 
 #email-registered {
@@ -269,12 +272,6 @@ footer {
 	background-color: rgba(0,0,0,0);
 	vertical-align: top;
 	margin-right: 8px;
-}
-
-#submit_button {
-	display: block;
-	width: 30%;
-	padding: 10px 10px 10px 12px;
 }
 
 /* Mobile phones: */

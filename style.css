@@ -82,10 +82,17 @@ header {
 	margin-top: 4%;
 	margin-right: 10%;
 	height: 50%;
-	font-size: 1.3em;
+	font-size: 1.4em;
+	font-weight: 300;
+}
+
+#polaris-link {
+	padding-bottom: 10%;
+	border-bottom: 2px solid;
 }
 
 #menu li a:hover {
+	padding-bottom: 10%;
 	border-bottom: 2px solid;
 }
 
@@ -200,9 +207,7 @@ header {
 
 
 
-#polaris-link {
-	border-bottom: 2px solid;
-}
+
 
 #screen {
 	width:50%;

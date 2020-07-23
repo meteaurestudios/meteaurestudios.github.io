@@ -123,6 +123,7 @@ header {
 
 #try-it {
 	margin-top: 5em;
+	text-align: center;
 }
 
 #try-it h2 {
@@ -130,13 +131,11 @@ header {
 	font-weight: 600;
 	color: #333;
 	width: 100%;
-	text-align: center;
 	margin-bottom: 1em;
 }
 
 #alpha-button-bottom img {
-	width: 20%;
-	margin-left: 40%;
+	height: 9%;
 }
 
 footer {
@@ -286,6 +285,22 @@ footer {
 
 	#meteaure-logo {
 		height: 15%;
+	}
+
+	.feature {
+		height: auto;
+	}
+
+	.feature-text{
+		width: 100%;
+	}
+
+	.img-left .feature-text {
+		margin-left: 0%;
+	}
+
+	.feature img {
+		width: 80%;
 	}
 
 	#about, #joinbeta {

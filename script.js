@@ -38,9 +38,11 @@ function validateEmail() {
 }
 
 function displayRegistered() {
-	var join_button = document.getElementById("beta-button");
-	join_button.className = "green_button";
-	join_button.innerHTML = "REGISTERED"
+	var join_button_top = document.getElementById("alpha-button").getElementsByTagName("img").item(0);
+	var join_button_bottom = document.getElementById("alpha-button-bottom").getElementsByTagName("img").item(0);
+
+	join_button_top.setAttribute("src", "img/alpha-button-registered.svg");
+	join_button_bottom.setAttribute("src", "img/alpha-button-registered.svg");
 
 	var joined_text = document.getElementById("email-registered");
 	joined_text.style.display = "block";
@@ -69,12 +71,14 @@ window.onload = function() {
     	console.log(valid ? 'valid email entered' : 'invalid email format');
     	
     	if(valid) {
-    		emailjs.sendForm('gmail', 'template_xG7jDpfU', this)
-    		.then(function(response) {
-    			console.log('Email sent', response.status, response.text);
-    		}, function(error) {
-    			console.log('Error, email not sent', error);
-    		});
+    		// emailjs.sendForm('gmail', 'template_xG7jDpfU', this)
+    		// .then(function(response) {
+    		// 	console.log('Email sent', response.status, response.text);
+    		// }, function(error) {
+    		// 	console.log('Error, email not sent', error);
+    		// });
+
+    		console.log("ok");
     	}
 
     });

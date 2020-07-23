@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="472" height="118" viewBox="0 0 472 118">
+  <defs>
+    <filter id="Rectangle_4" x="0" y="0" width="472" height="118" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_30" data-name="Groupe 30" transform="translate(-735.745 -799.892)">
+    <g transform="matrix(1, 0, 0, 1, 735.75, 799.89)" filter="url(#Rectangle_4)">
+      <rect id="Rectangle_4-2" data-name="Rectangle 4" width="453" height="99" rx="15" transform="translate(0 0)" fill="#fff"/>
+    </g>
+    <g id="Groupe_15" data-name="Groupe 15" transform="translate(762.745 828.242)">
+      <text id="Registered" transform="translate(245.193 35)" fill="#3ddc84" font-size="33" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="-87.793" y="0">Registered</tspan></text>
+      <path id="android" d="M43.211,24.7a2.447,2.447,0,1,1,2.446-2.447A2.447,2.447,0,0,1,43.211,24.7m-27.044,0a2.447,2.447,0,1,1,2.446-2.447A2.447,2.447,0,0,1,16.167,24.7M44.088,9.958l4.89-8.469A1.017,1.017,0,1,0,47.216.471L42.265,9.046a30.738,30.738,0,0,0-25.152,0L12.162.471A1.017,1.017,0,0,0,10.4,1.488l4.89,8.47A28.872,28.872,0,0,0,.31,33.068H59.068a28.875,28.875,0,0,0-14.98-23.11" transform="translate(64.69 5.542)" fill="#3ddc84"/>
+    </g>
+  </g>
+</svg>

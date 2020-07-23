@@ -89,15 +89,20 @@ header {
 .feature {
 	height: 75%;
 	margin-top: 5em;
-	margin-left: 10%;
-	width: 80%;
+	margin-left: 15%;
+	width: 70%;
 	color: #333;
+	display: flex;
+}
+
+.feature-img {
+	height: 100%;
+	margin: auto;
 }
 
 .feature-text {
 	width: 50%;
-	display: inline-block;
-	vertical-align: middle;
+	margin: auto;
 }
 
 .feature-text h3 {
@@ -110,19 +115,22 @@ header {
 	font-size: 1.4em;
 	font-weight: 300;
 }
-
-.feature-img {
-	height: 100%;
-	display: inline-block;	
-	vertical-align: middle;
-}
 	
 .img-right img, .img-left .feature-text {
-	margin-left: 15%;
+	order: 1; /* display on the right */
+	
+}
+
+.img-left img {
+	margin-left: 0;
+}
+
+.img-right img {
+	margin-right: 0;
 }
 
 #try-it {
-	margin-top: 5em;
+	margin-top: 7em;
 	text-align: center;
 }
 
@@ -289,6 +297,7 @@ footer {
 
 	.feature {
 		height: auto;
+		display: block;
 	}
 
 	.feature-text{

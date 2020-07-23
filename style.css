@@ -86,18 +86,13 @@ header {
 	font-weight: 300;
 }
 
-#polaris-link {
-	padding-bottom: 10%;
-	border-bottom: 2px solid;
-}
-
-#menu li a:hover {
+#polaris-link, #menu li a:hover  {
 	padding-bottom: 10%;
 	border-bottom: 2px solid;
 }
 
 .feature {
-	height: 50%;
+	height: 75%;
 	margin-top: 5em;
 	margin-left: 10%;
 	width: 80%;
@@ -117,17 +112,19 @@ header {
 }
 
 .feature-text p {
-	font-size: 1.5em;
+	font-size: 1.4em;
 	font-weight: 300;
 }
 
 .feature-img {
-	margin-left: 15%;
-	height: 150%;
+	height: 100%;
 	display: inline-block;	
 	vertical-align: middle;
 }
 	
+.img-right img, .img-left .feature-text {
+	margin-left: 15%;
+}
 
 /* ###########################*/
 

@@ -61,7 +61,25 @@ window.addEventListener('scroll', function(e) {
 
 });
 
+function resize_phones() {
+	var innerScreenWidth = document.getElementsByClassName('phone-frame')[0].offsetWidth*0.93;
+	var videoContents = document.getElementsByClassName('video-content');
+
+	// Place properly content inside phone mockup
+	for(var i = 0; i < videoContents.length; i++) {
+	    videoContents[i].style.width = innerScreenWidth;
+	    videoContents[i].style.height = videoContents[i].offsetWidth*2;
+	    videoContents[i].style.left = 0.034*innerScreenWidth;
+	    videoContents[i].style.top = 0.025*innerScreenWidth;
+	    videoContents[i].style.borderRadius =  0.086*innerScreenWidth + "px";
+	}
+}
+
+window.onresize = resize_phones;
+
 window.onload = function() {
+
+	resize_phones();
 
 	var element = window.location.hash;
 

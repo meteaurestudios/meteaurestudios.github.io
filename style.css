@@ -129,6 +129,30 @@ header {
 	margin-right: 0;
 }
 
+video {
+    object-fit: contain;
+}
+
+.video-container {
+	height: 100%;
+	position: relative;
+	width: 30%;
+}
+
+.phone-frame {
+	height: 100%;
+	position: absolute;
+	vertical-align: top;
+}
+
+.video-content {
+	height: 100%;
+	z-index: -1;
+	position: absolute;
+	overflow: hidden;
+	vertical-align: top;
+}
+
 #try-it {
 	margin-top: 7em;
 	text-align: center;

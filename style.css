@@ -325,22 +325,22 @@ footer {
 	.feature {
 		height: auto;
 		display: block;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.feature-text{
 		width: 84%;
 		margin-left: 8%;
 	}
 
-	.feature-text{
-		width: 100%;
-	}
-
-	.img-left .feature-text {
-		margin-left: 0%;
+	.img-left .img-right {
+		margin-left: 8%;
 	}
 
 	.feature-img {
 		height: unset;
-		width: 90%;
-		margin-left: 5%;
+		width: 100%;
 	}
 
 	#about, #joinbeta {

@@ -328,7 +328,7 @@ footer {
 		margin-left: 0;
 	}
 
-	.feature-text{
+	.feature-text, #try-it{
 		width: 84%;
 		margin-left: 8%;
 	}

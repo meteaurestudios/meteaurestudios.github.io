@@ -137,7 +137,6 @@ video {
 	height: 85%;
 	position: relative;
 	width: 30%;
-	vertical-align: center;
 	margin-top: 5em;
 }
 
@@ -341,6 +340,20 @@ footer {
 	.feature-img {
 		height: unset;
 		width: 100%;
+	}
+
+	.video-container {
+		width: 75%;
+		height: auto;
+		margin-left: auto;
+  		margin-right: auto;
+  		margin-top: 2em;
+	}
+
+	.phone-frame, .video-content {
+		position: relative;  /* TODO: insert video into phone frame from JS */
+		width: 100%;
+		height: auto;
 	}
 
 	#about, #joinbeta {

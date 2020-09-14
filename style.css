@@ -143,7 +143,6 @@ video {
 .phone-frame {
 	height: 100%;
 	position: absolute;
-	vertical-align: center;
 }
 
 .video-content {
@@ -151,7 +150,6 @@ video {
 	z-index: -1;
 	position: absolute;
 	overflow: hidden;
-	vertical-align: center;
 }
 
 #try-it {
@@ -343,15 +341,13 @@ footer {
 	}
 
 	.video-container {
+		height: unset; /* height is set from JS */
 		width: 75%;
-		height: auto;
-		margin-left: auto;
-  		margin-right: auto;
+		margin: auto;
   		margin-top: 2em;
 	}
 
 	.phone-frame, .video-content {
-		position: relative;  /* TODO: insert video into phone frame from JS */
 		width: 100%;
 		height: auto;
 	}

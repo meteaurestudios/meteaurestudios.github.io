@@ -324,6 +324,7 @@ footer {
 		display: block;
 		width: 100%;
 		margin-left: 0;
+		margin-top: 3em;
 	}
 
 	.feature-text, #try-it{
@@ -345,6 +346,7 @@ footer {
 		width: 75%;
 		margin: auto;
   		margin-top: 2em;
+  		margin-bottom: 5em;
 	}
 
 	.phone-frame, .video-content {

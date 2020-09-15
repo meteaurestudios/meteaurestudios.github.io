@@ -47,12 +47,12 @@ header {
 #header-text h2 {
 	margin-top: 3%;
 	font-size: 1.8em;
-	color: rgba(0,0,0,0.7);
 }
 
 #header-text p {
 	font-size: 1.3em;
 	margin-top: 8%;
+	color: #000;
 }
 
 #polaris-title {

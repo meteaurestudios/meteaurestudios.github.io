@@ -134,19 +134,20 @@ video {
 }
 
 .video-container {
-	height: 85%;
+	height: 100%;
 	position: relative;
 	width: 30%;
-	margin-top: 5em;
+	margin: auto;
 }
 
 .phone-frame {
-	height: 100%;
+	height: 85%;
+	top: 7.5%;
 	position: absolute;
+	right: 0;
 }
 
 .video-content {
-	height: 100%;
 	z-index: -1;
 	position: absolute;
 	overflow: hidden;

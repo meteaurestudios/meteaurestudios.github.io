@@ -110,12 +110,12 @@ window.onload = function() {
     	console.log(valid ? 'valid email entered' : 'invalid email format');
     	
     	if(valid) {
-    		// emailjs.sendForm('gmail', 'template_xG7jDpfU', this)
-    		// .then(function(response) {
-    		// 	console.log('Email sent', response.status, response.text);
-    		// }, function(error) {
-    		// 	console.log('Error, email not sent', error);
-    		// });
+    		emailjs.sendForm('gmail', 'template_xG7jDpfU', this)
+    		.then(function(response) {
+    			console.log('Email sent', response.status, response.text);
+    		}, function(error) {
+    			console.log('Error, email not sent', error);
+    		});
 
     		console.log("ok");
     	}

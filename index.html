@@ -17,49 +17,114 @@
         })();
     </script>
 
-	<title>Meteaure Studios</title>
-	<link rel="stylesheet" href="style.css" />
-	
+    <link rel="stylesheet" href="style.css" />
+	<title>Meteaure Studios | Polaris</title>
 </head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <body>
 
-	<div class="panel" id='left-panel'>
-		<img id='logo' src='img/logo.svg'/>
+	<header>
+		<img id='meteaure-logo' src='img/logo.svg'/>
 
-		<div id="polaris-text">
-			<h1>polaris</h1>
+		<div id="header-text">
+			<img id="polaris-title" src='img/polaris-title.svg'/>
 			<h2>Pattern creation station</h2>
-			<p>Create loop based patterns with Polaris using its 6 tracks sequencer. Modulate key parameters per step to generate complex and rich beats from a very simple interface. Take advantage of the 2 instrument types to generate complex bass lines, harsh noise or use the factory included samples at your disposal.</p>
-			
-			<img src="img/android.svg" id="android-logo-over-beta"/>
-			<div class='button' id='beta-button' onclick="openJoinBetaPane()">GET ALPHA VERSION</div>
-			<div id="email-registered">Thank you, we'll get back to you shortly.</div>
+			<p>Inspired by modern drum machines and grooveboxes, Polaris is an Android app allowing you to quickly create patterns anywhere, anytime.</p>
+			<a id="alpha-button" href ="#join" onclick="openJoinBetaPane()"><img src='img/alpha-button.svg'/></a>
+			<div id="email-registered">Thank you for registering, we will get back to you shortly.</div>
+		</div>
+	</header>
+
+	<div class="feature img-right">
+
+		<div class="feature-text">
+			<h3>Anywhere, anytime</h3>
+			<p>With your device always at hand, capture those inspirational moments right from the start, or let yourself experiment with quick ideas.</p>
 		</div>
 
-		<a id='twitter-link' class="social-icon" href ="https://twitter.com/meteaurestudios"><img  src='img/twitter.svg'/></a>
-		<a id='instagram-link' class="social-icon" href ="https://www.instagram.com/meteaurestudios"><img  src='img/instagram.svg'/></a>
-		<a id='facebook-link' class="social-icon" href ="https://www.facebook.com/meteaurestudios"><img  src='img/facebook.svg'/></a>
+		<div class="video-container">
+			<img class="phone-frame" src="img/phone-frame.png"/>
+
+			<div class="video-content">
+				<video width="100%" height="100%" muted="muted" autoplay="autoplay" loop="loop" >
+					<source src="videos/polaris.mov" type="video/mp4" />
+				</video>
+			</div>
+			
+		</div>
+		
+	</div>
+
+	<div class="feature img-left">
+
+		<div class="feature-text">
+			<h3>Sequence</h3>
+			<p>
+				Sequencing is at the very core of Polaris. For any of the 6 tracks available, use the 4x4 grid to enter steps and trigger notes.
+				<br/><br/>Because 16 steps might not be enough, you can take advantage of the trig conditions to make a note play once every 4 grids for example.
+				<br/><br/>Oh and one more thing, you can modulate several parameters per step via the modulation sequencer.</p>
+		</div>
+
+		<img src="img/screen-sequence.png" class="feature-img"/>
 
 	</div>
 
-	<div class="panel" id='right-panel'>
-		<img id="screen" src="img/screen.svg" />
+	<div class="feature img-right">
+
+		<div class="feature-text">
+			<h3>Design</h3>
+			<p>
+				Take advantage of the 2 instrument types - sample or synth - to generate complex bass lines, harsh noises, or explore the factory sounds that come with the app.
+				<br/><br/>No matter the instrument, shape your sound in detail thanks to the dedicated filter and distortion modules.
+			</p>
+		</div>
+
+		<img src="img/screen-design.png" class="feature-img"/>
+
+	</div>
+
+	<div class="feature img-left">
+
+		<div class="feature-text">
+			<h3>Mix</h3>
+			<p>
+				Adjust key parameters for each track like volume, reverb send or filter cutoff - all from a single place - to bring your pattern to life.
+		</div>
+
+		<img src="img/screen-mix.png" class="feature-img"/>
+
+	</div>
+
+	<div id="try-it">
+		<h2>Why don&#39;t you try it yourself?</h2>
+		<a id="alpha-button-bottom" href ="#join" onclick="openJoinBetaPane()"><img src='img/alpha-button-shadow.svg'/></a>
 	</div>
 
 	<div id="menu">
 		<ul>
-			<li><a id='polaris-link' href="#">polaris</a></li>
-			<li><a href="#about" onclick="openAboutPane()">about</a></li>
-			<li><a href="mailto:meteaure.studios@gmail.com">contact</a></li>
+			<li><a class="menu-item" id='polaris-link' href="#">polaris</a></li>
+			<li><a class="menu-item" href="#about" onclick="openAboutPane()">about</a></li>
+			<li><a class="menu-item" href="mailto:meteaure.studios@gmail.com">contact</a></li>
 		</ul>
 	</div>
 
+	<footer>
+		<div id="socials">
+			<a id='facebook-link' class="social-icon" href ="https://www.facebook.com/meteaurestudios"><img  src='img/facebook.svg'/></a>
+			<a id='instagram-link' class="social-icon" href ="https://www.instagram.com/meteaurestudios"><img  src='img/instagram.svg'/></a>
+			<a id='twitter-link' class="social-icon" href ="https://twitter.com/meteaurestudios"><img  src='img/twitter.svg'/></a>
+		</div>
+
+		meteaure studios - 2020
+	</footer>
+
+	<!-- PANELS -->
+
 	<div id="about_pane" class="popup_pane">
 		<div id="about" class="popup">
-			<h2>About Us</h2>
+			<h2>About us</h2>
 
 			<p>We are a french company focusing on building music apps for the Android platform. Our goal is to provide high-performance, state of the art musical experiences to billions of Android users.</p>
 
@@ -76,14 +141,12 @@
 			<h2>Join alpha program</h2>
 
 			<form id="registration-form">
-				<p>
-					<label for="email">Enter below the gmail address associated to your android device(s):</label>
-					<br/>
+				<label for="email">Enter below the gmail address associated to your android device(s):</label>
+				<div>
 					<img src="img/android.svg" id="android-logo"/>
 					<input type="email" name="user_email" id="email" rules="required" placeholder="john.doe@gmail.com"/>
-					<input type='submit' value='Register' class='button' id='submit_button'/>
-				</p>
-
+				</div>
+				<input type='submit' value='Register' class='button' id='submit_button'/>
 			</form>
 
 			<div id="email-error">The email address you provided above is not a valid gmail address</div>
@@ -93,6 +156,7 @@
 
 	<script type="text/javascript" src="script.js"></script>
 
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </body>
 
 </html>

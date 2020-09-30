@@ -7,7 +7,7 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	width: 100%;
 	color: #fefefe;
 }
@@ -17,111 +17,57 @@ a {
 	text-decoration: none;
 }
 
-p {
-	margin-top: 5%;
-} 
-
-h1 {
-	font-size: 6em;
-}
-
-h2 {
-	margin-top: 6%;
-	font-size: 1.6em;
-}
-
 li {
 	display: inline-block;
 }
 
-.panel {
-	display: inline-block;
-	vertical-align: top;
-	height: 100%;
-}
-
-.button, .green_button {
-	border: 2px solid white;
-	padding: 3%;
+header {
+	background-image: url('img/header.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 90%;
 	text-align: center;
-	border-radius: 80px;
-	cursor: pointer;
-	color: #fefefe;
-	background-color: rgba(0,0,0,0);
 }
 
-.green_button {
-	border-color: #3ddc84;
-	color: #3ddc84;
+#meteaure-logo {
+	position: absolute;
+	top: 2%;
+	left: 0;
+	height: 20%;
 }
 
-.button:hover {
-	background-color: #fff;
+#header-text {
+	position: relative;
+	top: 20%;
+	left: 30%;
+	width: 40%;
+	text-align: center;
+}
+
+#header-text h2 {
+	margin-top: 3%;
+	font-size: 1.8em;
+}
+
+#header-text p {
+	font-size: 1.3em;
+	margin-top: 8%;
 	color: #000;
 }
 
-#logo {
-	margin-top: 2%;
-	width: 18%;
+#polaris-title {
+	width: 75%;
 }
 
-.social-icon {
-	width: 3%;
-	position: absolute;
-	bottom: 3%;
-}
-
-#twitter-link  {
-	margin-left: 2%;
-}
-
-#instagram-link {
-	margin-left: 6%;
-}
-
-#facebook-link {
-	margin-left: 10%;
-}
-
-#left-panel {
-	width: 60%;
-	background-color: black;
-	float: left;
-}
-
-#right-panel {
-	width: 40%;
-	background-image: linear-gradient(to bottom , #32ABE1, #56D2E2);
-}
-
-#android-logo-over-beta {
-	margin-top: 10%;
-	margin-left: 45%;
-	width: 10%;
-}
-
-#beta-button {
-	width: 50%;
-	margin-left: 25%;
-}
-
-#email-registered {
-	display: none;
-	margin-top: 2%;
-	width: 100%;
-	text-align: center;
-	color: #3ddc84;
-}
-
-#polaris-text {
-	margin-left: 20%;
-	width: 60%;
+#alpha-button img {
+	margin-top: 8%;
+	height: 9%;
 }
 
 #menu {
 	width: 25%;
 	height: 10%;
-	top: 0;
+	top: 1%;
 	right: 0;
 	position: fixed;
 	text-align: right;
@@ -132,25 +78,112 @@ li {
 	margin-top: 4%;
 	margin-right: 10%;
 	height: 50%;
-	font-size: 1.3em;
-	font-weight: 350;
+	font-size: 1.4em;
+	font-weight: 300;
 }
 
-#menu li a:hover {
+#polaris-link, #menu li a:hover  {
+	padding-bottom: 10%;
 	border-bottom: 2px solid;
 }
 
-#polaris-link {
-	border-bottom: 2px solid;
+.feature {
+	height: 75%;
+	margin-top: 5em;
+	margin-left: 15%;
+	width: 70%;
+	color: #333;
+	display: flex;
 }
 
-#screen {
-	width:50%;
-	height: 90%;
-	margin-top: 10%;
-	margin-left: 25%;
-	display: inline-block;
-	vertical-align: middle;
+.feature-img {
+	height: 100%;
+	margin: auto;
+}
+
+.feature-text {
+	width: 50%;
+	margin: auto;
+}
+
+.feature-text h3 {
+	font-size: 2.8em;
+	margin-bottom: 0.8em;
+	font-weight: 400;
+}
+
+.feature-text p {
+	font-size: 1.4em;
+	font-weight: 300;
+}
+	
+.img-right img, .img-left .feature-text {
+	order: 1; /* display on the right */
+}
+
+.img-left img {
+	margin-left: 0;
+}
+
+.img-right img {
+	margin-right: 0;
+}
+
+video {
+    object-fit: contain;
+}
+
+.video-container {
+	height: 100%;
+	position: relative;
+	width: 30%;
+	margin: auto;
+}
+
+.phone-frame {
+	height: 85%;
+	top: 7.5%;
+	position: absolute;
+	right: 0;
+}
+
+.video-content {
+	z-index: -1;
+	position: absolute;
+	overflow: hidden;
+}
+
+#try-it {
+	margin-top: 7em;
+	text-align: center;
+}
+
+#try-it h2 {
+	font-size: 2.4em;
+	font-weight: 600;
+	color: #333;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+#alpha-button-bottom img {
+	height: 9%;
+}
+
+footer {
+	font-size: 1.1em;
+	margin-top: 3em;
+	margin-bottom: 1em;
+	color: #333;
+	text-align: center;
+}
+
+.social-icon img {
+	font-size: 1.4em;
+	height: 2.4em;
+	color: #333;
+	margin: 0 0.2em;
+	margin-bottom: 1em;
 }
 
 .popup_pane {
@@ -178,8 +211,51 @@ li {
 	box-shadow: 0px -1px 20px 5px rgba(0,0,0,0.8);
 }
 
+#about h2, #joinbeta h2 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#about p, #joinbeta p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
 #about a {
 	border-bottom: 2px solid;
+}
+
+.button {
+	border: 2px solid white;
+	padding: 3%;
+	text-align: center;
+	border-radius: 80px;
+	cursor: pointer;
+	color: #fefefe;
+	background-color: rgba(0,0,0,0);
+	font-size: 100%;
+	padding: 10px 30px 10px 30px;
+	display: inline-block;
+}
+
+.button:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+#registration-form {
+	text-align: center;
+}
+
+#email-registered {
+	display: none;
+	margin-top: 1%;
+	text-align: center;
+	color: #333;
+	font-weight: 700;
+	background-color: #fefefe;
+	padding: 10px 20px 10px 20px;
+	border-radius: 80px;
 }
 
 .close-icon {
@@ -232,33 +308,51 @@ li {
 	margin-right: 8px;
 }
 
-#submit_button {
-	display: block;
-	width: 30%;
-	padding: 10px 10px 10px 12px;
-}
-
+/* Mobile phones: */
 @media only screen and (max-width:620px) {
-	/* For mobile phones: */
-	#left-panel, #right-panel {
-		width:100%;
+	
+	#header-text {
+		width: 84%;
+		left: 8%;
 	}
 
-	#polaris-text {
-		margin-left: 10%;
-		width: 80%;
+	#meteaure-logo {
+		height: 15%;
 	}
 
-	.social-icon {
-		width: 10%;
+	.feature {
+		height: auto;
+		display: block;
+		width: 100%;
+		margin-left: 0;
+		margin-top: 3em;
 	}
 
-	#instagram-link {
-		margin-left: 15%;
+	.feature-text, #try-it{
+		width: 84%;
+		margin-left: 8%;
 	}
 
-	#facebook-link {
-		margin-left: 28%;
+	.img-left .img-right {
+		margin-left: 8%;
+	}
+
+	.feature-img {
+		height: unset;
+		width: 100%;
+	}
+
+	.video-container {
+		height: unset; /* height is set from JS */
+		width: 75%;
+		margin: auto;
+  		margin-top: 2em;
+  		margin-bottom: 5em;
+	}
+
+	.phone-frame, .video-content {
+		width: 100%;
+		height: auto;
 	}
 
 	#about, #joinbeta {

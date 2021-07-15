@@ -22,46 +22,77 @@ li {
 }
 
 header {
-	background-image: url('img/header.jpg');
-	background-size: cover;
+	background-color: #121212;
 	width: 100%;
 	height: 90%;
-	text-align: center;
+}
+
+img {
+	image-rendering: -moz-crisp-edges;         /* Firefox */
+	image-rendering:   -o-crisp-edges;         /* Opera */
+	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
 #meteaure-logo {
 	position: absolute;
 	top: 2%;
 	left: 0;
-	height: 20%;
+	height: 18%;
 }
 
 #header-text {
 	position: relative;
-	top: 20%;
-	left: 30%;
-	width: 40%;
+	top: 15%;
+	left: 15%;
+	width: 70%;
+	height: 85%;
 	text-align: center;
 }
 
+#polaris-title {
+	height: 14%;
+	width: auto;
+}
+
 #header-text h2 {
-	margin-top: 3%;
-	font-size: 1.8em;
+	margin-top: 2%;
+	font-size: 3em;
+	font-weight: 300;
+}
+
+#header-description {
+	position: absolute;
+	bottom: 0;
+	height: 70%;
+	width: 100%;
+}
+
+#header-phone {
+	height: 85%;
+	position: absolute;
+	left:  0;
+	bottom: 0;
+}
+
+#header-right-section {
+	margin-top: 8%;
+	float:right;
+	width: 40%;
+	text-align: left;
 }
 
 #header-text p {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	margin-top: 8%;
-	color: #000;
-}
-
-#polaris-title {
-	width: 75%;
+	font-weight: 400;
+	display: inline-block;
 }
 
 #alpha-button img {
 	margin-top: 8%;
-	height: 9%;
+	height: 15%;
 }
 
 #menu {

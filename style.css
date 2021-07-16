@@ -21,11 +21,6 @@ li {
 	display: inline-block;
 }
 
-header {
-	background-color: #121212;
-	width: 100%;
-	height: 90%;
-}
 
 img {
 	image-rendering: -moz-crisp-edges;         /* Firefox */
@@ -33,6 +28,12 @@ img {
 	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
 	image-rendering: crisp-edges;
 	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+header {
+	background-color: #121212;
+	width: 100%;
+	height:90%;
 }
 
 #meteaure-logo {
@@ -45,8 +46,8 @@ img {
 #header-text {
 	position: relative;
 	top: 15%;
-	left: 15%;
-	width: 70%;
+	left: 20%;
+	width: 60%;
 	height: 85%;
 	text-align: center;
 }
@@ -65,22 +66,27 @@ img {
 #header-description {
 	position: absolute;
 	bottom: 0;
-	height: 70%;
+	height: 65%;
 	width: 100%;
 }
 
 #header-phone {
-	height: 85%;
+	max-height: 100%;
+	height: 30vw;
 	position: absolute;
-	left:  0;
+	left: 0;
 	bottom: 0;
+	display: inline-block;
+	vertical-align: bottom;
 }
 
 #header-right-section {
-	margin-top: 8%;
-	float:right;
-	width: 40%;
+	position: absolute;
+	top:  5vw;
+	right: 0;
+	width: 35%;
 	text-align: left;
+	display: inline-block;
 }
 
 #header-text p {
@@ -92,7 +98,7 @@ img {
 
 #alpha-button img {
 	margin-top: 8%;
-	height: 15%;
+	width: 100%;
 }
 
 #menu {

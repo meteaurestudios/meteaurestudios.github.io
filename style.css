@@ -364,11 +364,11 @@ footer {
 	}
 
 	#polaris-title {
-		height: 10%;
+		height: 8%;
 	}
 
 	#header-text h2 {
-		font-size: 1.8em;
+		font-size: 1.5em;
 		margin-bottom: 3%;
 	}
 
@@ -394,6 +394,10 @@ footer {
 	#alpha-button img {
 		margin-top: 8%;
 		width: 75%;
+	}
+
+	#menu li {
+		font-size: 1.2em;
 	}
 
 	.feature {

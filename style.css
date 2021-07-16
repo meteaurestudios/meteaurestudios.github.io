@@ -348,13 +348,51 @@ footer {
 /* Mobile phones: */
 @media only screen and (max-width:620px) {
 	
-	#header-text {
-		width: 84%;
-		left: 8%;
+	header {
+		min-height: 95%;
+		height: auto;
 	}
 
 	#meteaure-logo {
-		height: 15%;
+		height: 10%;
+	}
+
+	#header-text {
+		width: 84%;
+		top:  5vh;
+		left: 8%;
+	}
+
+	#polaris-title {
+		height: 10%;
+	}
+
+	#header-text h2 {
+		font-size: 1.8em;
+	}
+
+	#header-description {
+		position: relative;
+	}
+
+	#header-phone, #header-right-section {
+		position: relative;
+		width: 100%;
+		height: auto;
+		max-height: none;
+	}
+
+	#header-right-section {
+		text-align: center;
+	}
+
+	#header-text p {
+		margin-top: 4%;
+	}
+
+	#alpha-button img {
+		margin-top: 8%;
+		width: 75%;
 	}
 
 	.feature {

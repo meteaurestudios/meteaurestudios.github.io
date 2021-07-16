@@ -125,10 +125,10 @@ header {
 }
 
 .feature {
-	height: 75%;
+	height: 70%;
 	margin-top: 5em;
-	margin-left: 15%;
-	width: 70%;
+	margin-left: 20%;
+	width: 60%;
 	color: #333;
 	display: flex;
 }
@@ -140,7 +140,10 @@ header {
 
 .feature-text {
 	width: 50%;
-	margin: auto;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 1em;
+	vertical-align: middle;
 }
 
 .feature-text h3 {
@@ -178,10 +181,9 @@ video {
 }
 
 .phone-frame {
-	height: 85%;
-	top: 7.5%;
-	position: absolute;
-	right: 0;
+	height: 100%;
+	margin: auto;
+	margin-right: 0;
 }
 
 .video-content {
@@ -217,7 +219,7 @@ footer {
 
 .social-icon img {
 	font-size: 1.4em;
-	height: 2.4em;
+	height: 2em;
 	color: #333;
 	margin: 0 0.2em;
 	margin-bottom: 1em;
@@ -405,7 +407,6 @@ footer {
 		display: block;
 		width: 100%;
 		margin-left: 0;
-		margin-top: 3em;
 		text-align: center;
 	}
 
@@ -420,6 +421,7 @@ footer {
 
 	.feature-text p {
 		font-size: 1.1em;
+		margin-bottom: 2em;
 	}
 
 	.feature-text h3 {
@@ -429,16 +431,14 @@ footer {
 
 	.feature-img {
 		height: unset;
-		width: 84%;
+		width: 60%;
 		margin: auto;
 	}
 
 	.video-container {
 		height: unset; /* height is set from JS */
-		width: 64%;
+		width: 60%;
 		margin: auto;
-  		margin-top: 0em;
-  		margin-bottom: 8em;
 	}
 
 	.phone-frame, .video-content {

@@ -406,33 +406,48 @@ footer {
 		width: 100%;
 		margin-left: 0;
 		margin-top: 3em;
+		text-align: center;
 	}
 
 	.feature-text, #try-it{
-		width: 84%;
-		margin-left: 8%;
+		width: 80%;
+		margin-left: 10%;
 	}
 
-	.img-left .img-right {
-		margin-left: 8%;
+	.feature-text {
+		text-align: left;	
+	}
+
+	.feature-text p {
+		font-size: 1.1em;
+	}
+
+	.feature-text h3 {
+		font-size: 2em;
+		margin-bottom: 0.3em;
 	}
 
 	.feature-img {
 		height: unset;
-		width: 100%;
+		width: 84%;
+		margin: auto;
 	}
 
 	.video-container {
 		height: unset; /* height is set from JS */
-		width: 75%;
+		width: 64%;
 		margin: auto;
-  		margin-top: 2em;
-  		margin-bottom: 5em;
+  		margin-top: 0em;
+  		margin-bottom: 8em;
 	}
 
 	.phone-frame, .video-content {
 		width: 100%;
 		height: auto;
+	}
+
+	#try-it{
+		margin-top: 3em;
 	}
 
 	#about, #joinbeta {

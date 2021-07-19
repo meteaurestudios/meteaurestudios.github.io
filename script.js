@@ -41,8 +41,8 @@ function displayRegistered() {
 	var join_button_top = document.getElementById("alpha-button").getElementsByTagName("img").item(0);
 	var join_button_bottom = document.getElementById("alpha-button-bottom").getElementsByTagName("img").item(0);
 
-	join_button_top.setAttribute("src", "img/alpha-button-registered.svg");
-	join_button_bottom.setAttribute("src", "img/alpha-button-registered.svg");
+	join_button_top.setAttribute("src", "img/alpha-button-registered.png");
+	join_button_bottom.setAttribute("src", "img/alpha-button-registered.png");
 
 	var joined_text = document.getElementById("email-registered");
 	joined_text.style.display = "block";

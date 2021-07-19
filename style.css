@@ -125,7 +125,7 @@ header {
 }
 
 .feature {
-	height: 70%;
+	height: 60%;
 	margin-top: 5em;
 	margin-left: 20%;
 	width: 60%;
@@ -176,14 +176,13 @@ video {
 .video-container {
 	height: 100%;
 	position: relative;
-	width: 30%;
 	margin: auto;
+	margin-right: 0;
 }
 
 .phone-frame {
 	height: 100%;
 	margin: auto;
-	margin-right: 0;
 }
 
 .video-content {
